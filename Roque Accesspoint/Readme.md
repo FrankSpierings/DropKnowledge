@@ -1,4 +1,4 @@
-### Roque Access Point - Attack EAP (TLS)
+### Rogue Access Point - Attack EAP (TLS)
 It's hard to check a RADIUS server (Authenticator) certificate. So as long as the organization does not use client certificates, but simple domain authentication (Active Directory for instance), we can try to capture some netntlm hashes.
 
 #### Attack
