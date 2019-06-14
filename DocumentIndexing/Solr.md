@@ -49,7 +49,8 @@ docker exec -it --user=solr "${CONTAINERNAME}" bin/post -c "${COLLECTOR}" \
 7. Now we can ask questions through `curl` or a webbrowser.
 
 ```shell
-curl "http://localhost:8983/solr/${COLLECTOR}/select?q=password&wt=json&indent=on"
+curl "http://localhost:8983/solr/${COLLECTOR}/select?q=password"
+curl "http://localhost:8983/solr/${COLLECTOR}/select?q=password&fl=resourcename"
 ```
 
 
