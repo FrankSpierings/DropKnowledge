@@ -38,7 +38,7 @@ curl -X POST -H 'Content-type:application/json' \
     "http://localhost:8983/solr/${COLLECTOR}/schema"
 ```
 
-6. We index the files in the mapped directory
+6. We index the files in the mapped directory. (Don't want to wait? Issue `curl http://localhost:8983/solr/${COLLECTION}/update?commit=true`
 
 ```shell
 docker exec -it --user=solr "${CONTAINERNAME}" bin/post -c "${COLLECTOR}" \
